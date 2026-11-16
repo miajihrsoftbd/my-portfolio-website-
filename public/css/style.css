@@ -1,0 +1,100 @@
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background-color: #f8fafc;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+
+/* Navbar Logo */
+
+.navbar-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Introduction */
+.hero-subtitle {
+    color: #2563eb;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Name */
+.hero-title {
+    color: #0f172a;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Designation */
+.hero-designation {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Description */
+.hero-description {
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Buttons */
+.hero-buttons .btn {
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+/* Profile Image */
+.hero-image img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .hero-section {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-designation {
+        font-size: 23px;
+    }
+
+    .hero-buttons .btn {
+        margin: 5px;
+    }
+}

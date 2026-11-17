@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
     <div class="container">
 
@@ -37,6 +37,10 @@
 
                 <li class="nav-item">
                     <a href="#education" class="nav-link">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
 
                 <li class="nav-item">

@@ -559,7 +559,7 @@
                             </div>
                             <div>
                                 <h6>Email</h6>
-                                <p>your-email@example.com</p>
+                                <p>abu.bakar.miaji@gmail.com</p>
                             </div>
                         </div>
 
@@ -569,7 +569,7 @@
                             </div>
                             <div>
                                 <h6>Phone</h6>
-                                <p>Your Phone Number</p>
+                                <p>+880 1611820481</p>
                             </div>
                         </div>
 

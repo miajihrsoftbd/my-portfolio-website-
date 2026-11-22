@@ -541,6 +541,25 @@
                     </p>
                 </div>
 
+                <!-- Alert Message -->
+
+                @if(session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul class="mb-0">
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                
+
                 <div class="row g-5">
 
                     <!-- Contact Information -->
@@ -585,12 +604,15 @@
 
                     </div>
 
+                   
+
                     <!-- Contact Form -->
                     <div class="col-lg-7">
 
                         <div class="contact-form">
 
-                            <form action="#" method="POST">
+                            <form action="{{ route('contact.store') }}" method="POST">
+                             @csrf
 
                                 <div class="mb-3">
                                     <label class="form-label">Your Name</label>

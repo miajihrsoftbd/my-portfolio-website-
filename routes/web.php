@@ -15,12 +15,7 @@ Route::get('/admin/login', [AdminController::class, 'login'])
 Route::post('/admin/login', [AdminController::class, 'authenticate'])
     ->name('admin.authenticate');
 
-Route::get('/admin/dashboard', function () {
-    if (!session('admin_logged_in')) {
-        return redirect()->route('admin.login');
-    }
-
-    return 'Welcome to Admin Dashboard!';
-})->name('admin.dashboard');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])
+    ->name('admin.dashboard');
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

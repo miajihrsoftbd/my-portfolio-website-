@@ -36,4 +36,20 @@ class AdminController extends Controller
 
         return back()->with('error', 'Invalid email or password.');
     }
+
+
+    public function dashboard()
+    {
+        if (!session('admin_logged_in')) {
+            return redirect()->route('admin.login');
+        }
+
+        $totalMessages = \App\Models\ContactMessage::count();
+
+        $recentMessages = \App\Models\ContactMessage::latest()
+            ->take(5)
+            ->get();
+
+        return view('admin.dashboard', compact('totalMessages', 'recentMessages'));
+    }
 }

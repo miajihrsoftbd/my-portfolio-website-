@@ -105,14 +105,28 @@
                 <i class="bi bi-house me-2"></i> Visit Website
             </a>
 
-            <a href="#">
-                <i class="bi bi-box-arrow-right me-2"></i> Logout
-            </a>
+            <form action="{{ route('admin.logout') }}" method="POST">
+                @csrf
+
+                <button type="submit"
+                        class="btn text-start w-100 mt-2"
+                        style="color: #b8c2d6;">
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Logout
+                </button>
+            </form>
 
         </aside>
 
         <!-- Main Content -->
         <main class="col-md-9 col-lg-10 main-content">
+
+                @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                @endif
 
             <!-- Topbar -->
             <div class="d-flex justify-content-between align-items-center mb-4">
@@ -206,9 +220,10 @@
                                         <td>{{ $message->subject }}</td>
                                         <td>{{ $message->created_at->format('d M Y') }}</td>
                                         <td>
-                                            <button class="btn btn-sm btn-outline-primary" disabled>
-                                                View
-                                            </button>
+                                            <a href="{{ route('admin.messages.show', $message->id) }}"
+                                                 class="btn btn-sm btn-outline-primary">
+                                                 View
+                                            </a>
                                         </td>
                                     </tr>
                                 @empty
@@ -235,5 +250,7 @@
     </div>
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

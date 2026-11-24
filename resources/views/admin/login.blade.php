@@ -35,6 +35,12 @@
                 </div>
             @endif
 
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
             <form action="{{ route('admin.authenticate') }}" method="POST">
                 @csrf
 
@@ -51,6 +57,11 @@
                 <button type="submit" class="btn btn-primary w-100">
                     Login
                 </button>
+
+                <p class="text-center mt-3">
+                    <strong>User:</strong> admin@miaji.com <br>
+                    <strong>Password:</strong> 123456789
+                </p>
 
             </form>
 

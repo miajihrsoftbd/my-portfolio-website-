@@ -52,4 +52,41 @@ class AdminController extends Controller
 
         return view('admin.dashboard', compact('totalMessages', 'recentMessages'));
     }
-}
+
+    public function showMessage($id)
+    {
+        if (!session('admin_logged_in')) {
+        return redirect()->route('admin.login');
+        }
+
+        $message = \App\Models\ContactMessage::findOrFail($id);
+
+        return view('admin.message-details', compact('message'));
+    }
+
+    public function deleteMessage($id)
+    {
+        if (!session('admin_logged_in')) {
+            return redirect()->route('admin.login');
+        }
+
+        $message = \App\Models\ContactMessage::findOrFail($id);
+
+        $message->delete();
+
+        return redirect()->route('admin.dashboard')
+            ->with('success', 'Message deleted successfully!');
+    }
+
+    public function logout(Request $request)
+    {
+        $request->session()->forget('admin_logged_in');
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('admin.login')
+            ->with('success', 'You have been logged out successfully.');
+    }
+    
+ }

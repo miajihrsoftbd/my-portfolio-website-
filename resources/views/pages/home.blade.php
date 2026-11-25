@@ -225,37 +225,72 @@
                     </p>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
+               <div class=d-flex flex-row  >
+                     <div class="row justify-content-center">
+                        <div class="col-lg-8">
 
-                        <!-- Education Item -->
-                        <div class="education-card">
-                            <div class="education-icon">
-                                <i class="bi bi-mortarboard-fill"></i>
-                            </div>
+                            <!-- Education Item -->
+                            <div class="education-card">
+                                <div class="education-icon">
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                </div>
 
-                            <div class="education-content">
-                                <span class="education-level">Bachelor's Degree</span>
-    
-                                <h4>BSc in Computer Science & Engineering</h4>
-    
-                                <h6>BANGLADESH UNIVERSITY</h6>
-    
-                                <p>
-                                    Completed a four-year undergraduate degree
-                                    in Computer Science and Engineering.
-                                </p>
-    
-                                <span class="education-status">
-                                    <i class="bi bi-check-circle-fill"></i>
-                                    Completed
-                                </span>
+                                <div class="education-content">
+                                    <span class="education-level">Bachelor's Degree</span>
+        
+                                    <h4>BSc in Computer Science & Engineering</h4>
+        
+                                    <h6>BANGLADESH UNIVERSITY</h6>
+        
+                                    <p>
+                                        Completed a four-year undergraduate degree
+                                        in Computer Science and Engineering.
+                                    </p>
+        
+                                    <span class="education-status">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Completed
+                                    </span>
+                                </div>
+
                             </div>
 
                         </div>
-
                     </div>
-                </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+
+                            <!-- Education Item -->
+                            <div class="education-card">
+                                <div class="education-icon">
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                </div>
+
+                                <div class="education-content">
+                                    <span class="education-level">Bachelor's Degree</span>
+        
+                                    <h4>BSc in Computer Science & Engineering</h4>
+        
+                                    <h6>BANGLADESH UNIVERSITY</h6>
+        
+                                    <p>
+                                        Completed a four-year undergraduate degree
+                                        in Computer Science and Engineering.
+                                    </p>
+        
+                                    <span class="education-status">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Completed
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+               </div>
 
             </div>
         </section>

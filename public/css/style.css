@@ -4,12 +4,12 @@
 ========================= */
 
 .hero-section {
-    background-color: #f8e6e7;
+    background-color: #b8e0f3;
     min-height: 90vh;
     display: flex;
     align-items: center;
-    padding: 90px 0;
-    margin-top: 20px;
+    padding: 130px 0;
+    
 }
 
 /* navbar */
@@ -124,7 +124,7 @@
 ========================= */
 
 .skills-section {
-    background-color: #f8e6e7;
+    background-color: #b8e0f3;
     padding: 90px 0;
 }
 
@@ -228,7 +228,7 @@
 
 /* EXPERIENCE SECTION */
 .experience-section {
-    background-color: #ffffff;
+    background-color: #b8e0f3;
     padding: 90px 0;
 }
 
@@ -387,7 +387,7 @@
 
 /* SERVICES SECTION */
 .services-section {
-    background-color: #ffffff;
+    background-color: #b8e0f3;
     padding: 90px 0;
 }
 

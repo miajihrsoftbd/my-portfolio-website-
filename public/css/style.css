@@ -4,11 +4,12 @@
 ========================= */
 
 .hero-section {
-    background-color: #f8fafc;
+    background-color: #f8e6e7;
     min-height: 90vh;
     display: flex;
     align-items: center;
-    padding: 70px 0;
+    padding: 90px 0;
+    margin-top: 20px;
 }
 
 /* navbar */
@@ -123,7 +124,7 @@
 ========================= */
 
 .skills-section {
-    background-color: #f8fafc;
+    background-color: #f8e6e7;
     padding: 90px 0;
 }
 
